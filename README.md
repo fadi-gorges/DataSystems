@@ -1,31 +1,19 @@
 # WheelsDirect
 
-This Python script extracts data from a CSV file and loads it into a [Supabase](https://supabase.com/) table, to be viewed on [PowerBI](https://app.powerbi.com/).
+This GitHub repository contains two Python scripts for managing car sales data: an ETL (Extract, Transform, Load) process and a data loader. Below is an overview of each script:
 
-## Prerequisites
+## 1. Car Data ETL Process
 
-Before running the script, make sure you have the following set up:
+This script performs the following tasks:
 
-1. **Supabase Account**: You'll need a Supabase account to create a table and obtain the necessary credentials (URL and API key).
+1. **Extract**: It retrieves car sales data from an Amazon S3 bucket. You'll need to set up your S3 bucket name and file key in the script.
 
-2. **Environment Variables**: Set up environment variables for your Supabase URL (`SUPABASE_URL`) and API key (`SUPABASE_KEY`). You can use a `.env` file or set them directly in your environment.
+2. **Transform**: The script cleans the data by renaming columns, extracting relevant information from the `title` column, and selecting specific columns for further analysis.
 
-3. **CSV Data File**: Ensure you have a CSV file named `data.csv` containing the car sales data.
+3. **Load**: The cleaned data is saved to a CSV file (`final_data_fixed.csv`).
 
-## Usage
+## 2. Car Sales Data Loader
 
-1. Clone this repository or download the script.
+This script extracts data from a CSV file (`data.csv`) and loads it into a [Supabase](https://supabase.com/) table named `CarSales`. It's designed to be part of a data pipeline for managing car sales data.
 
-2. Install the required dependencies using the following command:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the script:
-
-    ```bash
-    python main.py
-    ```
-
-4. The script will extract data from `data.csv` and upsert it into the `CarSales` table in your Supabase project.
+### You can view a more detailed README inside each folder
