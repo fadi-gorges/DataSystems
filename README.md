@@ -25,7 +25,7 @@ Before running the script, make sure you have the following set up:
 3. Run the script:
 
     ```bash
-    python app.py
+    python main.py
     ```
 
 4. The script will extract data from `data.csv` and upsert it into the `CarSales` table in your Supabase project.
