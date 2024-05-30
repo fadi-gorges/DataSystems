@@ -16,4 +16,8 @@ This script performs the following tasks:
 
 This script extracts data from a CSV file (`data.csv`) and loads it into a [Supabase](https://supabase.com/) table named `CarSales`. It's designed to be part of a data pipeline for managing car sales data.
 
+## 3. Car Sales Database Setup
+
+These SQL queries create and populate the various database tables for the WheelsDirect Car Sales Analysis System. These scripts were updated and improved upon during the development process.
+
 ### You can view a more detailed README inside each folder
