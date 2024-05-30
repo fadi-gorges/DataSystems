@@ -2,10 +2,6 @@
 
 This repository contains the prototype SQL scripts for creating and populating the database tables for the WheelsDirect Car Sales Analysis System. These scripts were updated and improved upon during the development process.
 
-## SQL_create_tables.sql
-
-This SQL script is responsible for creating and populating the necessary tables in the database. The tables created by this script are:
-
 ### Custom Table
 
 This table stores information about the custom features of the cars. The columns in this table are:
